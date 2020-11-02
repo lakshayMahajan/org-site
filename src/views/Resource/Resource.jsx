@@ -10,7 +10,7 @@ import useMedia from '../shared/useMedia'
 import ethan from '../../assets/people/ethan.png'
 import { LinkOutlined} from '@ant-design/icons';
 
-import ProductCard from './ProductCard'
+import ResourceCard from './ResourceCard'
 
 const {Title, Text} = Typography
 
@@ -33,7 +33,7 @@ const bigContainerVariants = {
 
 
 
-const Product = () => {
+const Resource = () => {
 
     const [view, setView] = useState("role")
 
@@ -43,8 +43,8 @@ const Product = () => {
     return(
         <div style={{marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{position: 'static', textAlign: 'center', marginBottom: '10px', zIndex:6}}>
-                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Products</Title>
-                <Text>See what we've been hard at work on</Text>
+                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Resources</Title>
+                <Text>See how we foster creation</Text>
             </motion.div>
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", height: "100vh", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
@@ -61,14 +61,14 @@ const Product = () => {
                 >
                     <div style={{display: 'flex', flexWrap: "wrap", justifyContent: smallerLayout ? 'center ':'space-between'}}>
                        
-                        <ProductCard status="Released" title="Clubs" description="Manage, browse, and join clubs in one central place."/>
-                        <ProductCard status="Released" title="Schedule" description="View the live bell schedule updated for any occassion."/>
-                        <ProductCard status="Demoing"title="Tutoring" description="Give and recieve real time tutoring anytime, anywhere."/>
-                        <ProductCard status="Demoing" title="Courses" description="View course options and plan out your academic career. "/>
-                        <ProductCard status="Building" last={true} title="Pass" description="Receive hall passages and messages from the office."/>
-                        <ProductCard status="Planning" last={true} title="Sports" description="Communicate and track with your bus driver on their route."/>
+                        <ResourceCard status="Released" title="Key" description="The auth and utility API powering our creations."/>
+                        <ResourceCard status="Released" title="Boiler" description="React boiler plate that integrates Key, allowing for rapid development."/>
+                        <ResourceCard status="Building" title="Lib" description="A client library for Key."/>
+                        {/* <ResourceCard status="Demoing" title="Courses" description="View course options and plan out your academic career. "/>
+                        <ResourceCard status="Building" last={true} title="Pass" description="Receive hall passages and messages from the office."/>
+                        <ResourceCard status="Planning" last={true} title="Sports" description="Communicate and track with your bus driver on their route."/>
 
-                        <ProductCard status="Planning" last={true} title="Busing" description="Track and communicate with your bus driver on their route."/>
+                        <ResourceCard status="Planning" last={true} title="Busing" description="Track and communicate with your bus driver on their route."/> */}
 
                     </div>
                     
@@ -78,4 +78,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default Resource

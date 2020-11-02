@@ -42,7 +42,7 @@ const ProductCard = ({img, title, description, last, status}) => {
         <motion.div whileHover={{x: 10}} variants={productVariants}  style={{boxShadow: " 2px 2px 15px rgb(0,118,220,0.18) ", width: smallerLayout ? "95%": "45%",maxWidth: smallerLayout ? '700px' : '', height: "120px", borderRadius: "10px", cursor: 'pointer', display: "flex", justifyContent: "space-between", alignItems: "center", margin: "20px", padding: "24px"}}>
             <div>
                 <div style={{display: 'flex', alignItems:'center', width: "60%"}}>
-                    <Title level={3} style={{color: "#333", marginBottom: "8px", marginRight: '10px'}}>{title} </Title> 
+                    <Title level={3} style={{color: "#333", marginBottom: "8px", marginRight: '10px'}}>{title}</Title> 
                     <CustomTag color={statusColor[status]}>{status}</CustomTag>
                 </div>
                

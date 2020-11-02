@@ -11,6 +11,8 @@ import { LinkOutlined} from '@ant-design/icons';
 
 import MemberList from './MemberList'
 
+import useMedia from '../shared/useMedia'
+
 
 const {Title, Text} = Typography
 
@@ -47,10 +49,11 @@ const Team = () => {
 
     const [view, setView] = useState("role")
 
+    const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])
 
     return(
         <div style={{marginTop: "100px", width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{textAlign: 'center'}}>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{zIndex: 6,textAlign: 'center'}}>
                 <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Meet Us</Title>
                 <Text>See who's behind the magic</Text>
             </motion.div>
@@ -58,22 +61,22 @@ const Team = () => {
                
                 style={{width: "100%", display: 'flex', background: "#fafdff", height: "100vh", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
             >
-                <svg style={{filter: "drop-shadow(0px -5px 5px rgb(0,118,220,0.15)", transform: "scaleY(0.8)", position: "absolute", zIndex: "1", top: "200px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fafdff" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,117.3C320,128,400,160,480,160C560,160,640,128,720,138.7C800,149,880,203,960,224C1040,245,1120,235,1200,213.3C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-                <motion.div  initial={{x: "100vh"}} animate={{x: 0, transition: {type: 'spring', duration: 1}}}  style={{marginTop: 'calc(100% * .10)', display: 'flex', zIndex: 4, boxShadow: " 2px 2px 10px rgb(0,118,220,0.1) ", borderRadius: "10px"}}>
-                    {/* <div onClick={() => setView("role")} style={{width: "110px", height: "45px", display: 'flex', borderRadius: "10px 0px 0px 10px",justifyContent: 'center', alignItems: "center", background: view == "role" ? "white" : "transparent", boxShadow: view == "role" ? " 2px 2px 10px rgb(0,118,220,0.18) " : "none", cursor: 'pointer'}}>
+                <svg style={{filter: "drop-shadow(0px -5px 5px rgb(0,118,220,0.15)", transform: "scaleY(0.8)", position: "absolute", zIndex: "1", top: smallerLayout ? 'calc(100% * .20)' : "calc(100% * .18)"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fafdff" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,117.3C320,128,400,160,480,160C560,160,640,128,720,138.7C800,149,880,203,960,224C1040,245,1120,235,1200,213.3C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+                {/* <motion.div  initial={{x: "100vh"}} animate={{x: 0, transition: {type: 'spring', duration: 1}}}  style={{marginTop: 'calc(100% * .10)', display: 'flex', zIndex: 4, boxShadow: " 2px 2px 10px rgb(0,118,220,0.1) ", borderRadius: "10px"}}>
+                    <div onClick={() => setView("role")} style={{width: "110px", height: "45px", display: 'flex', borderRadius: "10px 0px 0px 10px",justifyContent: 'center', alignItems: "center", background: view == "role" ? "white" : "transparent", boxShadow: view == "role" ? " 2px 2px 10px rgb(0,118,220,0.18) " : "none", cursor: 'pointer'}}>
                         <Text>By Role</Text>
                     </div>
                     <div onClick={() => setView("project")} style={{width: "110px", height: "45px", display: 'flex', borderRadius: "0px 10px 10px 0px",justifyContent: 'center', alignItems: "center", background: view == "project" ? "white" : "transparent", boxShadow: view == "project" ? " 2px 2px 10px rgb(0,118,220,0.18) " : "none", cursor: 'pointer'}}>
                         <Text>By Product</Text>
-                    </div> */}
-                </motion.div>
+                    </div>
+                </motion.div> */}
                 {view == "role" &&
                 <motion.div 
                     key={2}
                     variants={bigContainerVariants}
                     initial="hidden"
                     animate="visible"
-                    style={{width: "80%", zIndex: "3"}}
+                    style={{width: "80%", zIndex: "3",  marginTop: 'calc(100% * .12)'}}
                 >
 
                     <MemberList title="Board" noLink={true}>

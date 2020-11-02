@@ -1,0 +1,34 @@
+import React from 'react'
+import {Typography, Button, Col, Row} from 'antd'
+
+import {Link} from 'react-router-dom'
+
+import logo from "../../assets/logo.png"
+
+
+const {Title, Text} = Typography
+
+const Navbar = () => {
+
+    return(
+        <div style={{width: '100%', height: "70px", background: "#fefefe", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "10px 20px"}}>
+            <div style={{display: 'flex', alignItems: 'center', width: "30%"}}>
+                <Link to="/"><img src={logo} style={{cursor: 'pointer', height: "40px"}}></img></Link>
+                <Title level={3} style={{margin: "0px 10px"}}> HSE Apps </Title>
+            </div>
+            <div style={{display: 'flex', alignItems: 'center',width : '350px', justifyContent: "space-evenly", justifySelf: 'center'}}>   
+                <Link to="/products"><Text >Products</Text></Link> 
+                <Link to="/products"><Text>Resources</Text></Link> 
+                <Link to="/team"><Text>Team</Text></Link> 
+                <Link to="/products"><Text>About</Text></Link> 
+
+            </div>
+            <div style={{width: "30%", display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
+                <Typography.Link style={{margin: "0px 20px"}}>Contact Us</Typography.Link>
+                <Button type="primary">Join Us</Button>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar

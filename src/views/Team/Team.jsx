@@ -82,7 +82,7 @@ const Team = () => {
                     variants={bigContainerVariants}
                     initial="hidden"
                     animate="visible"
-                    style={{width: "80%", zIndex: "3",  marginTop: 'calc(100% * .14)'}}
+                    style={{width: "80%", zIndex: "3",  marginTop: smallerLayout ?  mobile ?'calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
 
                     <MemberList title="Board" noLink={true}>

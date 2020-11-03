@@ -61,7 +61,7 @@ const Product = () => {
                     variants={bigContainerVariants}
                     initial="hidden"
                     animate="visible"
-                    style={{width: smallerLayout ?  "90%" : '80%', zIndex: "3", marginTop: mobile ? 'calc(100% * .3)': 'calc(100% * .12)', maxWidth: '1400px'}}
+                    style={{width: smallerLayout ?  "90%" : '80%', zIndex: "3", marginTop: smallerLayout ?  mobile ?'calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)', maxWidth: '1400px'}}
                 >
                     <div style={{display: 'flex', flexWrap: "wrap", justifyContent: smallerLayout ? 'center ':'space-between'}}>
                        

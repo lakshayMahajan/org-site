@@ -16,15 +16,15 @@ const {Title, Text} = Typography
 
 const Landing = () => {
 
-    const mobile = useMedia(['(min-width: 800px)', '(max-width: 800px)'], [false, true])
+    const mobile = useMedia(['(min-width: 750px)', '(max-width: 750px)'], [false, true])
 
 
     return(
-        <div style={{height: "calc(100vh - 60px)", marginBottom: '60px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
+        <div style={{height: "calc(100vh - 60px)", marginBottom: mobile ? '60px' : '80px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
             <div style={{display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap'}}>
                 <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <div>
+                    <div style={{paddingBottom: mobile ? '0px':'20px', paddingTop: mobile ? '20px':'0px', paddingLeft: mobile ? '0px' : '10px'}}>
                         <Title level={2} style={{fontSize: '28px', marginBottom: '5px'}}>Student Built.</Title>
                         <Text>Building custom software solutions to connect HSE.</Text>
                         <br/>

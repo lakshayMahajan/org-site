@@ -12,15 +12,19 @@ import {motion} from 'framer-motion'
 
 import useMedia from '../shared/useMedia'
 
+import {use100vh} from 'react-div-100vh'
+
+
 const {Title, Text} = Typography
 
 const Landing = () => {
 
     const mobile = useMedia(['(min-width: 750px)', '(max-width: 750px)'], [false, true])
 
+    const vh = use100vh()
 
     return(
-        <div style={{overflowX: 'hidden',height: "calc(100vh - 80px)", width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
+        <div style={{overflowX: 'hidden',height: vh - 80, width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
             <div style={{display: 'flex', justifyContent: 'space-between',  width: '100%', flexWrap: 'wrap'}}>
                 <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',}}>

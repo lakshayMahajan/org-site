@@ -57,7 +57,7 @@ const Team = () => {
 
     const mobile = useMedia(['(min-width: 500px)', '(max-width: 500px)'], [false, true])
 
-    const smallMobile = useMedia(['(min-width: 500px)', '(max-width: 500px)'], [false, true])
+    const smallMobile = useMedia(['(min-width: 350px)', '(max-width: 350px)'], [false, true])
 
 
     return(
@@ -69,7 +69,7 @@ const Team = () => {
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
             >
-                <svg style={{marginTop: "20px",filter: "drop-shadow(0px -5px 5px rgb(0,118,220,0.20)", transform: "scaleY(0.5)", position: "absolute", zIndex: "1", top: smallerLayout ? (mobile ?  smallMobile ? 'calc(100% * .50)' : 'calc(100% * .40)' : 'calc(100% * .20)') : "calc(100% * .18)"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg style={{marginTop: "20px",filter: "drop-shadow(0px -5px 5px rgb(0,118,220,0.20)", transform: "scaleY(0.5)", position: "absolute", zIndex: "1", top: smallerLayout ? (mobile ?  smallMobile ? 'calc(100% * .50)' : 'calc(100% * .35)' : 'calc(100% * .20)') : "calc(100% * .18)"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#fafdff" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,170.7C384,139,480,85,576,96C672,107,768,181,864,186.7C960,192,1056,128,1152,101.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg>
                 {/* <motion.div  initial={{x: "100vh"}} animate={{x: 0, transition: {type: 'spring', duration: 1}}}  style={{marginTop: 'calc(100% * .10)', display: 'flex', zIndex: 4, boxShadow: " 2px 2px 10px rgb(0,118,220,0.1) ", borderRadius: "10px"}}>
@@ -86,7 +86,7 @@ const Team = () => {
                     variants={bigContainerVariants}
                     initial="hidden"
                     animate="visible"
-                    style={{width: "80%", zIndex: "3",  marginTop: smallerLayout ?  mobile ?'calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
+                    style={{width: "80%", zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
 
                     <MemberList title="Board" noLink={true}>

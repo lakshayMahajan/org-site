@@ -20,7 +20,7 @@ const Landing = () => {
 
 
     return(
-        <div style={{height: "calc(100vh - 60px)", marginBottom: mobile ? '60px' : '80px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
+        <div style={{overflowX: 'hidden',height: "calc(100vh - 80px)", width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
             <div style={{display: 'flex', justifyContent: 'space-between',  width: '100%', flexWrap: 'wrap'}}>
                 <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',}}>

@@ -22,8 +22,8 @@ const Landing = () => {
     return(
         <div style={{height: "calc(100vh - 60px)", marginBottom: mobile ? '60px' : '80px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
-            <div style={{display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap'}}>
-                <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between',  width: '100%', flexWrap: 'wrap'}}>
+                <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
                     <div style={{paddingBottom: mobile ? '0px':'20px', paddingTop: mobile ? '20px':'0px', paddingLeft: mobile ? '0px' : '10px'}}>
                         <Title level={2} style={{fontSize: '28px', marginBottom: '5px'}}>Student Built.</Title>
                         <Text>Building custom software solutions to connect HSE.</Text>
@@ -33,7 +33,7 @@ const Landing = () => {
 
                 </div>
 
-                <div style={{width: mobile ? '100%' :"45%",  height: '100%', display: 'flex',marginTop: mobile ? '50px' : '',justifyContent: mobile ? 'flex-end' : ''}}>
+                <div style={{width: mobile ? '100%' :"45%",  height: '100%', display: 'flex',marginTop: mobile ? '50px' : '',justifyContent: mobile ? 'flex-end' : '', alignItems:'flex-start',}}>
                     <motion.img initial={{x: '30%'}} animate={{x: 0, transition: {duration: .8, type: 'spring', delay: 0.05}}} src={heroImage} style={{filter: 'hue-rotate(-10deg)',maxWidth: '900px', width: mobile ? '100%':'160%', position: 'relative', left: mobile ? '10%': '-20%'}}></motion.img>
 
                 </div>

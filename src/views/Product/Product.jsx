@@ -35,6 +35,11 @@ const bigContainerVariants = {
 
 const Product = () => {
 
+
+    React.useEffect(() => {
+        document.title = "HSE Apps | Products"
+    })
+
     const [view, setView] = useState("role")
 
     const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])

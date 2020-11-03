@@ -47,6 +47,10 @@ const memberContainerVariants = {
 
 const Team = () => {
 
+    React.useEffect(() => {
+        document.title = "HSE Apps | Team"
+    })
+
     const [view,setView] = useState('role')
 
     const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])

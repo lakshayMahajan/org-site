@@ -53,7 +53,7 @@ const Product = () => {
         <div style={{marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{position: 'static', textAlign: 'center', marginBottom: '10px', zIndex:6}}>
                 <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Products</Title>
-                <Text>See what we've been hard at work on</Text>
+                <Text>Click on a product to see more</Text>
             </motion.div>
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
@@ -67,7 +67,8 @@ const Product = () => {
                     initial="hidden"
                     animate="visible"
                     style={{width: smallerLayout ?  "90%" : '80%', zIndex: "3", marginTop: smallerLayout ?  mobile ?'calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)', maxWidth: '1400px'}}
-                >
+                >   
+                
                     <div style={{display: 'flex', flexWrap: "wrap", justifyContent: smallerLayout ? 'center ':'space-between'}}>
                        
                         <ProductCard status="Released" title="Clubs" description="Manage, browse, and join clubs in one central place."/>
@@ -75,7 +76,7 @@ const Product = () => {
                         <ProductCard status="Demoing"title="Tutoring" description="Give and recieve real time tutoring anytime, anywhere."/>
                         <ProductCard status="Demoing" title="Courses" description="View course options and plan out your academic career. "/>
                         <ProductCard status="Building" last={true} title="Pass" description="Receive hall passages and messages from the office."/>
-                        <ProductCard status="Planning" last={true} title="Sports" description="Communicate and track with your bus driver on their route."/>
+                        <ProductCard status="Planning" last={true} title="Sports" description="Get real time scores and notifications for HSE Sports."/>
 
                         <ProductCard status="Planning" last={true} title="Busing" description="Track and communicate with your bus driver on their route."/>
 

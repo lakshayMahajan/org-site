@@ -90,7 +90,7 @@ const Team = () => {
 
 
     return(
-        <div style={{marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+        <div style={{overflowX:'hidden',marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{position: 'static', textAlign: 'center', marginBottom: '10px', zIndex:6}}>
                 <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Team</Title>
                 <Text>See who's behind the magic</Text>

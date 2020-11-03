@@ -12,6 +12,7 @@ import { LinkOutlined} from '@ant-design/icons';
 import MemberList from './MemberList'
 
 import useMedia from '../shared/useMedia'
+import { useEffect } from 'react'
 
 
 const {Title, Text} = Typography
@@ -53,11 +54,39 @@ const Team = () => {
 
     const [view,setView] = useState('role')
 
+    const genWidth = () => {
+
+        let winWidth = window.innerWidth * .85
+
+        if(window.innerWidth <= 720){
+            return winWidth
+        }
+
+        if(winWidth > 300 * 4){
+            return  1201
+
+        } else {
+            return (Math.floor(winWidth / 300) * 300) + 1
+
+        }
+
+    }
+
+    const [width, setWidth] = useState(genWidth())
+
+    useEffect(() => {
+        window.onresize = () => {
+            setWidth(genWidth)
+        }
+    }, [])
+
     const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])
 
     const mobile = useMedia(['(min-width: 500px)', '(max-width: 500px)'], [false, true])
 
     const smallMobile = useMedia(['(min-width: 350px)', '(max-width: 350px)'], [false, true])
+
+
 
 
     return(
@@ -86,7 +115,7 @@ const Team = () => {
                     variants={bigContainerVariants}
                     initial="hidden"
                     animate="visible"
-                    style={{width: "80%", zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
+                    style={{width: '85%', maxWidth: genWidth(), zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
 
                     <MemberList title="Board" noLink={true}>
@@ -105,6 +134,8 @@ const Team = () => {
 
                     <MemberList title="Members" noLink={true}>
                         <TeamCard info={{name: "Ethan Donahue", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend'], img: ethan}}/>
+                        <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
+                        <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
                         <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
 
                     </MemberList>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import {Typography, Tag} from 'antd'
 
@@ -8,6 +8,7 @@ import preston from '../../assets/preston.png'
 
 import { GithubFilled, LinkedinFilled} from '@ant-design/icons';
 import styled from 'styled-components';
+import useMedia from '../shared/useMedia'
 
 const {Title, Text} = Typography
 
@@ -42,11 +43,15 @@ const memberVariants = {
 
 const TeamCard = ({info}) => {
 
+    const smallerLayout = useMedia(['(min-width: 720px)', '(max-width: 720px)'], [false, true])
+
     return(
-        <motion.div variants={memberVariants} style={{display: "flex", flexDirection: "column", alignItems: "center", width: "250px", margin: "0px 50px 50px 0px"}}>
+        <motion.div variants={memberVariants} style={{display: "flex", flexDirection: "column", alignItems: "center", width: smallerLayout ? '70%': '250px', margin: "25px"}}>
+
         <div style={{position: "relative"}}>
-            <motion.img whileHover={{scale: 1.02, transition: {duration: 0.2}}} style={{width: "250px", height: "250px", borderRadius: "8px", boxShadow: " 2px 2px 10px rgb(0,118,220,0.18) "}} src={info.img || preston}/>
+            <motion.img whileHover={{scale: 1.02, transition: {duration: 0.2}}} style={{width:  smallerLayout ? '100%': '250px', height:  smallerLayout ? '100%': '250px', borderRadius: "8px", boxShadow: " 2px 2px 10px rgb(0,118,220,0.18) "}} src={info.img || preston}/>
         </div>
+
         <div style={{display: "flex", justifyContent: 'space-between', width: "100%", marginTop: "15px", fontSize: "16px"}}>
             <Text strong>{info.name}</Text>
             <Text strong style={{color: "#333"}}>
@@ -54,6 +59,7 @@ const TeamCard = ({info}) => {
                 <a  href={info.li} target="_blank"> <LinkedinFilled  className="icon" style={{marginLeft: "7px"}}/></a>
             </Text>
         </div>
+        
         <div style={{display: "flex", justifyContent: 'flex-start', width: "100%", marginTop: "10px", flexWrap: "wrap"}}>
             {info.roles.map(role => {
                 return <Tag style={{background: `${roleColors[role]}10`, border: `${roleColors[role]}66 solid 1px`, color: `${roleColors[role]}bb`}}>{role}</Tag>

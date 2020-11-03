@@ -42,11 +42,12 @@ const Resource = () => {
 
     const [view, setView] = useState("role")
 
+
     const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])
 
     const mobile = useMedia(['(min-width: 500px)', '(max-width: 500px)'], [false, true])
 
-    const smallMobile = useMedia(['(min-width: 450px)', '(max-width: 450px)'], [false, true])
+    const smallMobile = useMedia(['(min-width: 350px)', '(max-width: 350px)'], [false, true])
 
 
     return(

@@ -2,7 +2,7 @@
 
 body{
     overflow-x: hidden;
-    margin: 0px
+    width: '100vw'
 }
 
 .icon{

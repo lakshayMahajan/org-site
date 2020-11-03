@@ -24,7 +24,7 @@ const Landing = () => {
     const vh = use100vh()
 
     return(
-        <div style={{overflowX: 'hidden',height: vh - 80, width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
+        <div style={{overflowX: 'hidden',height: vh - 70, width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
             <div style={{display: 'flex', justifyContent: 'space-between',  width: '100%', flexWrap: 'wrap'}}>
                 <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',}}>

@@ -34,7 +34,7 @@ const Landing = () => {
                 </div>
 
                 <div style={{width: mobile ? '100%' :"45%",  height: '100%', display: 'flex',marginTop: mobile ? '50px' : '',justifyContent: mobile ? 'flex-end' : '', alignItems:'flex-start',}}>
-                    <motion.img initial={{x: '30%'}} animate={{x: 0, transition: {duration: .8, type: 'spring', delay: 0.05}}} src={heroImage} style={{filter: 'hue-rotate(-10deg)',maxWidth: '900px', width: mobile ? '100%':'160%', position: 'relative', left: mobile ? '10%': '-20%'}}></motion.img>
+                    <motion.img initial={{x: '30%'}} animate={{x: 0, transition: {duration: 0.5, type: 'spring', stiffness: '90'}}} src={heroImage} style={{filter: 'hue-rotate(-10deg)',maxWidth: '900px', width: mobile ? '100%':'160%', position: 'relative', left: mobile ? '10%': '-20%'}}></motion.img>
 
                 </div>
             </div>

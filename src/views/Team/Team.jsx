@@ -126,17 +126,18 @@ const Team = () => {
                                         roles: ['Director', 'Fullstack', 'Design']
                                     }}
                         />
-                        <TeamCard info={{name: "Arnav Mehra", img: "https://cdn.discordapp.com/attachments/701265165525450834/765037663849152532/Screen_Shot_2020-10-11_at_10.26.27_PM.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Fullstack']}}/>
-                        <TeamCard info={{name: "Chris Farber", img: "https://media-exp1.licdn.com/dms/image/C4E03AQFLj0i5TFRsPg/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=E2_7dzX_QW06JVc7zKi4eJMNOCVjunRuTGNTPMrL2U0", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Fullstack', 'Mobile'], }}/>
-                        <TeamCard info={{name: "Aaron Ni", img: "https://indianahax.org/static/media/aaron.bf25d95f.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Mobile']}}/>
+                        <TeamCard info={{name: "Arnav Mehra", img: "https://cdn.discordapp.com/attachments/701265165525450834/765037663849152532/Screen_Shot_2020-10-11_at_10.26.27_PM.png", li: "https://www.linkedin.com/in/arnav-mehra-ab8975193/", gh: "https://github.com/ArnavMeh", roles: ['Fullstack']}}/>
+                        <TeamCard info={{name: "Chris Farber", img: "https://media-exp1.licdn.com/dms/image/C4E03AQFLj0i5TFRsPg/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=E2_7dzX_QW06JVc7zKi4eJMNOCVjunRuTGNTPMrL2U0", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
+                        <TeamCard info={{name: "Aaron Ni", img: "https://indianahax.org/static/media/aaron.bf25d95f.png", li: "https://www.linkedin.com/in/aaron-ni/", gh: "https://github.com/Physige", roles: ['Frontend', 'Mobile']}}/>
 
                     </MemberList>
 
                     <MemberList title="Members" noLink={true}>
-                        <TeamCard info={{name: "Ethan Donahue", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend'], img: ethan}}/>
-                        <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
-                        <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
-                        <TeamCard info={{name: "Meglan O'mera", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
+                        <TeamCard info={{name: "Ethan Donahue", li: "https://www.linkedin.com/in/ethan-donahue-69834b197/", gh: "https://github.com/ethandonahue", roles: ['Frontend'], img: ethan}}/>
+                        <TeamCard info={{name: "Meglan O'mera", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
+                        <TeamCard info={{name: "Eric Bedrosian", roles: ['Outreach'], img: "https://cdn.discordapp.com/attachments/626507510085320725/773308830011752499/eric.png"}}/>
+                        <TeamCard info={{name: "Aryadeep Buddha", gh: "https://github.com/SadFarm1", roles: ['Backend'], img: "https://cdn.discordapp.com/attachments/627006557321691138/773309936981114940/rsz_1arya.png"}}/>
+
 
                     </MemberList>
 

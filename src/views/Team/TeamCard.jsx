@@ -17,6 +17,7 @@ const roleColors = {
     "Director" : "#1890ff",
     "Fullstack" : "#1852ff",
     "Design" : "#1b18ff",
+    "Outreach": "#1b18ff",
     "Mobile" : "#5918ff",
     "Frontend" : "#9618ff",
     "Backend" : "#d418ff",
@@ -55,8 +56,12 @@ const TeamCard = ({info}) => {
         <div style={{display: "flex", justifyContent: 'space-between', width: "100%", marginTop: "15px", fontSize: "16px"}}>
             <Text strong>{info.name}</Text>
             <Text strong style={{color: "#333"}}>
+                {info.gh && 
                 <a  href={info.gh} target="_blank"><GithubFilled className="icon" style={{marginLeft: "7px"}}/></a> 
+                }
+                {info.li && 
                 <a  href={info.li} target="_blank"> <LinkedinFilled  className="icon" style={{marginLeft: "7px"}}/></a>
+                }
             </Text>
         </div>
         

@@ -39,8 +39,8 @@ const Navbar = () => {
                         <p style={{fontSize: "15px"}}><Link to='/team' onClick={() => setNavV(false)}> <TeamOutlined style={{marginRight: '5px'}}/> Team</Link></p>
                         <p style={{fontSize: "15px"}}><Link to='/about' onClick={() => setNavV(false)}> <QuestionOutlined style={{marginRight: '5px'}}/> About </Link></p>
                         <Divider></Divider>
-                        <p style={{fontSize: "15px"}}><Link to='/about' onClick={() => setNavV(false)}> <MailOutlined style={{marginRight: '5px'}}/> Contact </Link></p>
-                        <p style={{fontSize: "14px"}}><Link to='/about' onClick={() => setNavV(false)}> <UserAddOutlined style={{marginRight: '5px'}}/> Join </Link></p>
+                        <p style={{fontSize: "15px"}}><a target="_blank" href="https://airtable.com/shrgzrUWtOtwXJ67J"> <MailOutlined style={{marginRight: '5px'}}/> Contact </a></p>
+                        <p style={{fontSize: "14px"}}><a target="_blank" href="https://airtable.com/shrviVLm2wdRwaXBI"> <UserAddOutlined style={{marginRight: '5px'}}/> Join </a></p>
 
 
 
@@ -61,8 +61,8 @@ const Navbar = () => {
 
                 </div>
                 <div style={{width: "30%", display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
-                    <Typography.Link style={{margin: "0px 20px"}}>Contact Us</Typography.Link>
-                    <Button type="primary">Join Us</Button>
+                    <a target="_blank" href="https://airtable.com/shrgzrUWtOtwXJ67J"><Typography.Link style={{margin: "0px 20px"}}>Contact Us</Typography.Link></a>
+                    <a target="_blank" href="https://airtable.com/shrviVLm2wdRwaXBI"><Button type="primary">Join Us</Button></a>
                 </div>
             </>
             }

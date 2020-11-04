@@ -27,10 +27,10 @@ const Landing = () => {
         <div style={{overflowX: 'hidden',height: vh - 70, width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center' }}>
                        
             <div style={{display: 'flex', justifyContent: 'space-between',  width: '100%', flexWrap: 'wrap'}}>
-                <div style={{width: mobile ? '100% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
-                    <div style={{paddingBottom: mobile ? '0px':'20px', paddingTop: mobile ? '20px':'0px', paddingLeft: mobile ? '0px' : '10px'}}>
+                <div style={{width: mobile ? '90% ':"45%", display: 'flex', alignItems: 'center', justifyContent: 'center',marginTop: mobile ? '30px':'0px',  marginLeft: mobile ? '20px' : '0px'}}>
+                    <div style={{paddingBottom: mobile ? '0px':'30px',}}>
                         <Title level={2} style={{fontSize: '28px', marginBottom: '5px'}}>Student Built.</Title>
-                        <Text>Building custom software solutions to connect HSE.</Text>
+                        <Text>Building software solutions to connect HSE.</Text>
                         <br/>
                         <Link to="/products"><Button type="primary" style={{marginTop: '20px'}}>View Products</Button></Link>
                     </div>

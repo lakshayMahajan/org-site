@@ -6,6 +6,8 @@ import {Typography, Tag} from 'antd'
 
 import useMedia from '../shared/useMedia'
 
+import {Link} from 'react-router-dom'
+
 import logo from '../../assets/logo.png'
 
 const {Title, Text} = Typography
@@ -26,7 +28,7 @@ const CustomTag = ({children, color}) => {
     )
 }
 
-const ProductCard = ({img, title, description, last, status}) => {
+const ProductCard = ({img, title, description, last, status, link}) => {
 
     const smallerLayout = useMedia(['(min-width: 1200px)', '(max-width: 1200px)'], [false, true])
 
@@ -39,7 +41,8 @@ const ProductCard = ({img, title, description, last, status}) => {
     }
 
     return(
-        <motion.div whileHover={{x: 10}} variants={productVariants}  style={{boxShadow: " 2px 2px 15px rgb(0,118,220,0.18) ", width: smallerLayout ? "95%": "45%",maxWidth: smallerLayout ? '700px' : '', height: "120px", borderRadius: "10px", cursor: 'pointer', display: "flex", justifyContent: "space-between", alignItems: "center", margin: "20px", padding: "24px"}}>
+    <Link href={link}  style={{margin: '0px', width: smallerLayout ? "95%": "45%",maxWidth: smallerLayout ? '700px' : ''}}>
+     <motion.div whileHover={{x: 10}} variants={productVariants}  style={{boxShadow: " 2px 2px 15px rgb(0,118,220,0.18) ", width: '100%', height: "120px", borderRadius: "10px", cursor: 'pointer', display: "flex", justifyContent: "space-between", alignItems: "center", margin: "20px", padding: "24px"}}>
             <div>
                 <div style={{display: 'flex', alignItems:'center', width: "60%"}}>
                     <Title level={3} style={{color: "#333", marginBottom: "8px", marginRight: '10px'}}>{title}</Title> 
@@ -52,6 +55,8 @@ const ProductCard = ({img, title, description, last, status}) => {
                 <img src={logo} style={{height: "30%", maxHeight: '75px', marginleft: '10px'}}/>
             </div>
         </motion.div>
+    </Link>
+       
     )
 }
 

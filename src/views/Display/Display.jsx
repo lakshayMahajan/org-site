@@ -99,12 +99,12 @@ const Display = () => {
 
             <div style={{width: breakPoint ? '100%' :'50%', marginTop: breakPoint ? '50px' : ''}}>
                 {item.isMobile ?
-                  <motion.div style={{display: 'flex', justifyContent: breakPoint ? 'center' : ''}} initial={{x: '50%'}} animate={{x: 0, transition: {duration: 0.9, type: 'spring', stiffness: '70'}}}  whileHover={{x: 10}}>
+                  <motion.div style={{display: 'flex', justifyContent: breakPoint ? 'center' : 'flex-start', alignItems: 'flex-start'}} initial={{x: '50%'}} animate={{x: 0, transition: {duration: 0.9, type: 'spring', stiffness: '70'}}}  whileHover={{x: 10}}>
                   <img style={{width: breakPoint ? '' : '60%',maxWidth: breakPoint ? '':'450px', maxHeight: breakPoint ? '550px' : '' ,padding: '5px',borderRadius: '25px',border: "8px solid rgb(0,118,220,0.04)",  boxShadow: " 2px 2px 15px rgb(0,118,220,0.30)"}} src={item.photo} ></img>
 
               </motion.div>
                 :
-                <motion.div style={{display: 'flex', justifyContent: breakPoint ? 'center' : ''}} initial={{x: '30%'}} animate={{x: 0, transition: {duration: 0.5, type: 'spring', stiffness: '90'}}}  whileHover={{x: -10}}>
+                <motion.div style={{display: 'flex', justifyContent: breakPoint ? 'center' : 'flex-start', alignItems: 'flex-start'}} initial={{x: '30%'}} animate={{x: 0, transition: {duration: 0.5, type: 'spring', stiffness: '90'}}}  whileHover={{x: -10}}>
                     <img style={{width: breakPoint ? '90%' :'150%',maxWidth: '1400px', padding: '5px',borderRadius: '25px',border: "8px solid rgb(0,118,220,0.04)",  boxShadow: " 2px 2px 15px rgb(0,118,220,0.30)"}} src={item.photo} ></img>
 
                 </motion.div>

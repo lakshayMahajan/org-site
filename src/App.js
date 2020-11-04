@@ -6,20 +6,20 @@ import Landing from './views/Landing/Landing'
 import Team from './views/Team/Team'
 import Product from './views/Product/Product'
 import Resource from './views/Resource/Resource'
-
+import Display from './views/Display/Display'
 
 
 import Navbar from './views/shared/Navbar'
 
 function App() {
 
-  // notification.info({
-  //   message: 'Site under construction!',
-  //   description:
-  //     'Please come back in a few days when the site is complete! Our product, resource, and team pages are being finalized.',
-  //   placement: 'bottomRight',
-  //   duration: '20'
-  // })
+  notification.info({
+    message: 'Site under construction!',
+    description:
+      'A few remaining product pages, and the about page are still being finished.',
+    placement: 'bottomRight',
+    duration: '20'
+  })
 
   return (
     <Router>
@@ -30,6 +30,8 @@ function App() {
           <Route exact path="/team" component={Team}/>
           <Route exact path="/products" component={Product}/>
           <Route exact path="/resources" component={Resource}/>
+          <Route exact path="/products/:product" component={Display}/>
+          <Route exact path="/resources/:resource" component={Display}/>
 
         </Switch>
 

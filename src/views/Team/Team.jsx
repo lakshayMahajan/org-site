@@ -139,6 +139,7 @@ const Team = () => {
                         <TeamCard info={{name: "Ethan Zentz", gh: "https://github.com/ezlikespie", roles: ['Fullstack'], img: "https://prd-mp-images.azureedge.net/6b32ad23-3213-4fdb-b9db-e1825a512362/image/8b36ffe8-aeb4-4bc0-9acb-058dc5b8d68d/about-image.jpg"}}/>
                         <TeamCard info={{name: "Anish Kambhampati", roles: ['Backend'],gh: "https://github.com/kambhani", img: "https://cdn.discordapp.com/attachments/627006557321691138/773349755719385098/anish.png"}}/>
                         <TeamCard info={{name: "Alec Thierion De Monclin", roles: ['Backend'], img: "https://cdn.discordapp.com/attachments/626507510085320725/773350832175054848/alec.png"}}/>
+                        <TeamCard info={{name: "Sullivan Schena", roles: ['Frontend'], img: "https://cdn.discordapp.com/attachments/627006557321691138/773365547768479744/unknown.png"}}/>
 
                     </MemberList>
 

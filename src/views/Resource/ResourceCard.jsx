@@ -28,7 +28,7 @@ const CustomTag = ({children, color}) => {
 
 const ProductCard = ({img, title, description, last, status}) => {
 
-    const smallerLayout = useMedia(['(min-width: 1350px)', '(max-width: 1350px)'], [false, true])
+    const smallerLayout = useMedia(['(min-width: 1200px)', '(max-width: 1200px)'], [false, true])
 
 
     const statusColor = {

@@ -43,7 +43,7 @@ const tutoring = {
 }
 
 const courses = {
-    photo: "https://cdn.discordapp.com/attachments/627006557321691138/773589816163434536/Screen_Shot_2020-11-04_at_11.47.59_AM.png",
+    photo: "https://cdn.discordapp.com/attachments/627006557321691138/773590829490765844/Screen_Shot_2020-11-04_at_11.53.42_AM.png",
     isMobile: false,
     githubLink: "https://github.com/ArnavMeh/hsecourses-front",
     desc: 'View course options and plan out your academic career.',

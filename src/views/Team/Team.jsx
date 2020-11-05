@@ -127,7 +127,7 @@ const Team = () => {
                         />
                         <TeamCard info={{name: "Arnav Mehra", img: "https://cdn.discordapp.com/attachments/701265165525450834/765037663849152532/Screen_Shot_2020-10-11_at_10.26.27_PM.png", li: "https://www.linkedin.com/in/arnav-mehra-ab8975193/", gh: "https://github.com/ArnavMeh", roles: ['Fullstack']}}/>
                         <TeamCard info={{name: "Chris Farber", img: "https://media-exp1.licdn.com/dms/image/C4E03AQFLj0i5TFRsPg/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=E2_7dzX_QW06JVc7zKi4eJMNOCVjunRuTGNTPMrL2U0", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
-                        <TeamCard info={{name: "Aaron Ni", img: "https://indianahax.org/static/media/aaron.bf25d95f.png", li: "https://www.linkedin.com/in/aaron-ni/", gh: "https://github.com/Physige", roles: ['Frontend', 'Mobile']}}/>
+                        <TeamCard info={{name: "Aaron Ni", img: "https://cdn.discordapp.com/attachments/627006557321691138/773816409632669736/aaron.png", li: "https://www.linkedin.com/in/aaron-ni/", gh: "https://github.com/Physige", roles: ['Frontend', 'Mobile']}}/>
 
                     </MemberList>
 

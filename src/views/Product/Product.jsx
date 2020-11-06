@@ -42,7 +42,7 @@ const Product = () => {
 
     const [view, setView] = useState("role")
 
-    const smallerLayout = useMedia(['(min-width: 1200px)', '(max-width: 1200px)'], [false, true])
+    const smallerLayout = useMedia(['(min-width: 1300px)', '(max-width: 1300px)'], [false, true])
 
     const mobile = useMedia(['(min-width: 500px)', '(max-width: 500px)'], [false, true])
 

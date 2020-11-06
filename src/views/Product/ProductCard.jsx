@@ -30,7 +30,7 @@ const CustomTag = ({children, color}) => {
 
 const ProductCard = ({img, title, description, last, status, link}) => {
 
-    const smallerLayout = useMedia(['(min-width: 1200px)', '(max-width: 1200px)'], [false, true])
+    const smallerLayout = useMedia(['(min-width: 1300px)', '(max-width: 1300px)'], [false, true])
 
 
     const statusColor = {
@@ -52,7 +52,7 @@ const ProductCard = ({img, title, description, last, status, link}) => {
                     <Text style={{color: "#555", textAlign: 'justify'}}>{description}</Text>
                 </div>
                 <div>
-                    <img src={require(`../../assets/logos/${title}.png`)}style={{height: "30%", maxHeight: '65px', marginleft: '10px'}}/>
+                    <img src={require(`../../assets/logos/${title}.png`)}style={{height: "30%", maxHeight: ['Schedule','Sports'].includes(title) ? "50px" :'55px', marginleft: '10px'}}/>
                 </div>
             </motion.div>
         </Link>

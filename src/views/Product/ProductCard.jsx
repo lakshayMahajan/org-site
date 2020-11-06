@@ -52,7 +52,7 @@ const ProductCard = ({img, title, description, last, status, link}) => {
                     <Text style={{color: "#555", textAlign: 'justify'}}>{description}</Text>
                 </div>
                 <div>
-                    <img src={logo} style={{height: "30%", maxHeight: '75px', marginleft: '10px'}}/>
+                    <img src={require(`../../assets/logos/${title}.png`)}style={{height: "30%", maxHeight: '65px', marginleft: '10px'}}/>
                 </div>
             </motion.div>
         </Link>

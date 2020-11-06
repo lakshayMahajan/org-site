@@ -7,10 +7,9 @@ import {motion} from 'framer-motion'
 import useMedia from '../shared/useMedia'
 
 
-import ethan from '../../assets/people/ethan.png'
 import { LinkOutlined} from '@ant-design/icons';
 
-import ResourceCard from './ResourceCard'
+
 
 const {Title, Text} = Typography
 
@@ -33,15 +32,14 @@ const bigContainerVariants = {
 
 
 
-const Resource = () => {
+const Product = () => {
+
 
     React.useEffect(() => {
-        document.title = "HSE Apps | Resources"
+        document.title = "HSE Apps | Products"
     })
 
-
     const [view, setView] = useState("role")
-
 
     const smallerLayout = useMedia(['(min-width: 1300px)', '(max-width: 1300px)'], [false, true])
 
@@ -53,8 +51,8 @@ const Resource = () => {
     return(
         <div style={{marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{position: 'static', textAlign: 'center', marginBottom: '10px', zIndex:6}}>
-                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Resources</Title>
-                <Text>See the tools we use to facilitate creation</Text>
+                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>About Us</Title>
+                <Text>See what our orgnization is all about</Text>
             </motion.div>
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
@@ -68,23 +66,17 @@ const Resource = () => {
                     initial="hidden"
                     animate="visible"
                     style={{width: smallerLayout ?  "90%" : '80%', zIndex: "3", marginTop: smallerLayout ?  mobile ?'calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)', maxWidth: '1400px'}}
-                >
-                    <div style={{display: 'flex', flexWrap: "wrap", justifyContent: smallerLayout ? 'center ':'space-between'}}>
-                       
-                     
-                        <ResourceCard link="https://github.com/HSE-Apps/hse-key" status="Released" title="Key" description="The auth and utility API powering our creations."/>
-                        <ResourceCard  status="Released" title="Boiler" description="React boiler plate that integrates Key, allowing for rapid development."/>
-                        <ResourceCard status="Building" title="Lib" description="A client library for Key."/>
+                >   
+                <div style={{width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+                    <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Our Mission</Title>
+                    <Title level={4} style={{fontSize: smallerLayout ? '16px' : '20px',fontWeight: '300', margin: '0px', color: '#555'}}>To connect students through a cohesive software ecosystem</Title>
 
-                    </div>
+                </div>
                     
                 </motion.div>
             </motion.div>
         </div>
     )
-
-    
-    
 }
 
-export default Resource
+export default Product

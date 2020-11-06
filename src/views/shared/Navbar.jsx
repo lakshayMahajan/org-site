@@ -36,7 +36,6 @@ const Navbar = () => {
                         <p style={{fontSize: "15px"}}><Link to='/' onClick={() => setNavV(false)}> <HomeOutlined style={{marginRight: '5px'}}/> Home </Link></p>
                         <p style={{fontSize: "15px"}}><Link to='/products' onClick={() => setNavV(false)}> <DesktopOutlined style={{marginRight: '5px'}}/> Products</Link></p>
                         <p style={{fontSize: "15px"}}><Link to='/resources' onClick={() => setNavV(false)}> <CodeOutlined style={{marginRight: '5px'}}/> Resources </Link></p>
-                        <p style={{fontSize: "15px"}}><Link to='/team' onClick={() => setNavV(false)}> <TeamOutlined style={{marginRight: '5px'}}/> Team</Link></p>
                         <p style={{fontSize: "15px"}}><Link to='/about' onClick={() => setNavV(false)}> <QuestionOutlined style={{marginRight: '5px'}}/> About </Link></p>
                         <Divider></Divider>
                         <p style={{fontSize: "15px"}}><a target="_blank" href="https://airtable.com/shrgzrUWtOtwXJ67J"> <MailOutlined style={{marginRight: '5px'}}/> Contact </a></p>
@@ -56,7 +55,6 @@ const Navbar = () => {
                 <div style={{display: 'flex', alignItems: 'center',width : '350px', justifyContent: "space-evenly", justifySelf: 'center'}}>   
                     <Link to="/products"><Text >Products</Text></Link> 
                     <Link to="/resources"><Text>Resources</Text></Link> 
-                    <Link to="/team"><Text>Team</Text></Link> 
                     <Link to="/about"><Text>About</Text></Link> 
 
                 </div>

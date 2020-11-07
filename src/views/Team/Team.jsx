@@ -91,8 +91,8 @@ const Team = () => {
     return(
         <div style={{overflowX:'hidden ',marginTop: "100px", marginBottom: '50px', width: "100%", background: "#fefefe", position: 'static', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} style={{position: 'static', textAlign: 'center', marginBottom: '10px', zIndex:6}}>
-                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>About Us</Title>
-                <Text>Learn more about our team and organization</Text>
+                <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Our Mission</Title>
+                <Text>To connect HSE students through a cohesive software ecosystem</Text>
             </motion.div>
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
@@ -117,17 +117,7 @@ const Team = () => {
                     animate="visible"
                     style={{width: '85%', maxWidth: genWidth(), zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
-                     <div style={{width: '100%',textAlign:'center',marginTop: '30px',marginBottom: '50px', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-                        <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Our Mission</Title>
-                        <Title level={4} style={{fontSize: smallerLayout ? '16px' : '20px',fontWeight: '300', margin: '0px', color: '#555'}}>To connect students through a cohesive software ecosystem</Title>
-
-                    </div>
-                    <div style={{width: '100%',textAlign:'center',marginTop: '80px',marginBottom: '10px', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-                        <Title level={1} style={{color: "#333", marginBottom: "0px"}}>Team</Title>
-                        <Text>See who's behind the magic</Text>
-
-
-                    </div>
+                    
                     <MemberList title="Board" noLink={true}>
                         <TeamCard info={{
                                         name: "Preston McCrary", 

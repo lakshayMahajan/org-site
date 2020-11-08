@@ -135,7 +135,7 @@ const Team = () => {
                     <MemberList title="Members" noLink={true}>
                         <TeamCard info={{name: "Aryadeep Buddha", gh: "https://github.com/SadFarm1", roles: ['Backend'], img: "https://cdn.discordapp.com/attachments/627006557321691138/773309936981114940/rsz_1arya.png"}}/>
                         <TeamCard info={{name: "Ethan Donahue", li: "https://www.linkedin.com/in/ethan-donahue-69834b197/", gh: "https://github.com/ethandonahue", roles: ['Frontend'], img: ethan}}/>
-                        <TeamCard info={{name: "Meglan O'mera", roles: ['Frontend', 'Design'], img: "https://media.discordapp.net/attachments/598666996053180416/765732880873291776/unknown.png?width=921&height=921"}}/>
+                        <TeamCard info={{name: "Meglan O'mera", roles: ['Frontend', 'Design'], img: "https://cdn.discordapp.com/attachments/627006557321691138/775133138569527296/unknown.png"}}/>
                         <TeamCard info={{name: "Eric Bedrosian", roles: ['Outreach'], img: "https://cdn.discordapp.com/attachments/626507510085320725/773308830011752499/eric.png"}}/>
                         <TeamCard info={{name: "Ethan Zentz", gh: "https://github.com/ezlikespie", roles: ['Fullstack'], img: "https://prd-mp-images.azureedge.net/6b32ad23-3213-4fdb-b9db-e1825a512362/image/8b36ffe8-aeb4-4bc0-9acb-058dc5b8d68d/about-image.jpg"}}/>
                         <TeamCard info={{name: "Anish Kambhampati", roles: ['Backend'],gh: "https://github.com/kambhani", img: "https://cdn.discordapp.com/attachments/627006557321691138/773349755719385098/anish.png"}}/>

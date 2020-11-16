@@ -38,8 +38,9 @@ const tutoring = {
     photo: "https://cdn.discordapp.com/attachments/626507510085320725/773435608541560832/Screen_Shot_2020-11-04_at_1.36.53_AM.png",
     isMobile: false,
     githubLink: "https://github.com/HSE-Apps/tutoring-client",
-    desc: 'Give and receive real time tutoring anytime, anywhere.'
-
+    desc: 'Give and receive real time tutoring anytime, anywhere.',
+    siteLink: 'https://hsetutoring.com',
+    isDemo: true
 }
 
 const courses = {

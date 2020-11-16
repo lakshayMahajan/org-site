@@ -73,7 +73,7 @@ const Product = () => {
                        
                         <ProductCard status="Released" title="Clubs" description="Manage, browse, and join clubs in one central place."/>
                         <ProductCard status="Released" title="Schedule" description="View the live bell schedule updated for any occassion."/>
-                        <ProductCard status="Demoing"title="Tutoring" description="Give and recieve real time tutoring anytime, anywhere."/>
+                        <ProductCard status="Demoing"title="Tutoring" description="Give and receive real time tutoring anytime, anywhere."/>
                         <ProductCard status="Demoing" title="Courses" description="View course options and plan out your academic career. "/>
                         <ProductCard status="Building" last={true} title="Pass" description="Receive hall passages and messages from the office."/>
                         <ProductCard status="Planning" last={true} title="Sports" description="Get real time scores and notifications for HSE Sports."/>

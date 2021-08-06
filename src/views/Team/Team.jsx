@@ -111,29 +111,20 @@ const Team = () => {
 
                 {view == "role" &&
                 <motion.div 
-                    key={2}
-                    variants={bigContainerVariants}
-                    initial="hidden"
-                    animate="visible"
-                    style={{width: '85%', maxWidth: genWidth(), zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
+                key={2}
+                variants={bigContainerVariants}
+                initial="hidden"
+                animate="visible"
+                style={{width: '85%', maxWidth: genWidth(), zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
                     
                     <MemberList title="Board" noLink={true}>
-                        <TeamCard info={{
-                                        name: "Preston McCrary", 
-                                        li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", 
-                                        gh: "https://github.com/prestonmccrary", 
-                                        roles: ['Director', 'Fullstack', 'Design']
-                                    }}
-                        />
-                        <TeamCard info={{name: "Arnav Mehra", img: "https://cdn.discordapp.com/attachments/701265165525450834/765037663849152532/Screen_Shot_2020-10-11_at_10.26.27_PM.png", li: "https://www.linkedin.com/in/arnav-mehra-ab8975193/", gh: "https://github.com/ArnavMeh", roles: ['Fullstack']}}/>
-                        <TeamCard info={{name: "Chris Farber", img: "https://cdn.discordapp.com/attachments/627006557321691138/795345177346179132/1583975027966.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
-                        <TeamCard info={{name: "Aaron Ni", img: "https://cdn.discordapp.com/attachments/627006557321691138/773816409632669736/aaron.png", li: "https://www.linkedin.com/in/aaron-ni/", gh: "https://github.com/Physige", roles: ['Frontend', 'Mobile']}}/>
+                        <TeamCard info={{name: "Aryadeep Buddha", li:"https://www.linkedin.com/in/aryadeep-buddha-57b751211/", gh: "https://github.com/AryaBuddha", roles: ['Director', 'Project Lead','Fullstack'], img: "https://i.imgur.com/L8MupgD.png"}}/>
 
+                        <TeamCard info={{name: "Chris Farber", img: "https://cdn.discordapp.com/attachments/627006557321691138/795345177346179132/1583975027966.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
                     </MemberList>
 
                     <MemberList title="Members" noLink={true}>
-                        <TeamCard info={{name: "Aryadeep Buddha", gh: "https://github.com/AryaBuddha", roles: ['Backend'], img: "https://cdn.discordapp.com/attachments/627006557321691138/773309936981114940/rsz_1arya.png"}}/>
                         <TeamCard info={{name: "Ethan Donahue", li: "https://www.linkedin.com/in/ethan-donahue-69834b197/", gh: "https://github.com/ethandonahue", roles: ['Frontend'], img: ethan}}/>
                         <TeamCard info={{name: "Meglan O'mera", roles: ['Frontend', 'Design'], img: "https://cdn.discordapp.com/attachments/627006557321691138/775133138569527296/unknown.png"}}/>
                         <TeamCard info={{name: "Eric Bedrosian", roles: ['Outreach'], img: "https://cdn.discordapp.com/attachments/626507510085320725/773308830011752499/eric.png"}}/>
@@ -142,6 +133,18 @@ const Team = () => {
                         <TeamCard info={{name: "Alec Thierion De Monclin", roles: ['Backend'], img: "https://cdn.discordapp.com/attachments/626507510085320725/773350832175054848/alec.png"}}/>
                         <TeamCard info={{name: "Sullivan Schena", roles: ['Frontend'], img: "https://cdn.discordapp.com/attachments/627006557321691138/773365547768479744/unknown.png"}}/>
 
+                    </MemberList>
+                    <MemberList title="Previous Members" noLink={true}>
+                        <TeamCard info={{
+                            name: "Preston McCrary", 
+                            li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", 
+                            gh: "https://github.com/prestonmccrary", 
+                            roles: ['Fullstack', 'Design'],
+                            img: "https://i.imgur.com/xmAoEuZ.png"
+                        }}
+                        />
+                        <TeamCard info={{name: "Arnav Mehra", img: "https://cdn.discordapp.com/attachments/701265165525450834/765037663849152532/Screen_Shot_2020-10-11_at_10.26.27_PM.png", li: "https://www.linkedin.com/in/arnav-mehra-ab8975193/", gh: "https://github.com/ArnavMeh", roles: ['Fullstack']}}/>
+                        <TeamCard info={{name: "Aaron Ni", img: "https://cdn.discordapp.com/attachments/627006557321691138/773816409632669736/aaron.png", li: "https://www.linkedin.com/in/aaron-ni/", gh: "https://github.com/Physige", roles: ['Frontend', 'Mobile']}}/>
                     </MemberList>
 
                    
@@ -153,11 +156,11 @@ const Team = () => {
                     initial="hidden"
                     animate="visible"
                     style={{width: "80%", zIndex: "3"}}
-                >
+                    >
                     <MemberList title="Clubs">
-                        <TeamCard info={{name: "Preston McCrary", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Project Lead']}}/>
+                    <TeamCard info={{name: "Preston McCrary", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Project Lead']}}/>
                     </MemberList>
-
+                    
                     <MemberList title="Tutoring">
                         <TeamCard info={{name: "Preston McCrary", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/prestonmccrary", roles: ['Project Lead']}}/>
                     </MemberList>

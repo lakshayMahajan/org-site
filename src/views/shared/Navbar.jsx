@@ -38,8 +38,8 @@ const Navbar = () => {
                         <p style={{fontSize: "15px"}}><Link to='/resources' onClick={() => setNavV(false)}> <CodeOutlined style={{marginRight: '5px'}}/> Resources </Link></p>
                         <p style={{fontSize: "15px"}}><Link to='/about' onClick={() => setNavV(false)}> <QuestionOutlined style={{marginRight: '5px'}}/> About </Link></p>
                         <Divider></Divider>
-                        <p style={{fontSize: "15px"}}><a target="_blank" href="https://airtable.com/shrgzrUWtOtwXJ67J"> <MailOutlined style={{marginRight: '5px'}}/> Contact </a></p>
-                        <p style={{fontSize: "14px"}}><a target="_blank" href="https://airtable.com/shrviVLm2wdRwaXBI"> <UserAddOutlined style={{marginRight: '5px'}}/> Join </a></p>
+                        <p style={{fontSize: "15px"}}><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScLvgEh2bUevdf9v4dFMZprl862m70YwtIqdM899bFhqm5IYg/viewform?usp=sf_link"> <MailOutlined style={{marginRight: '5px'}}/> Contact </a></p>
+                        <p style={{fontSize: "14px"}}><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc7ZrKa7cJ2hYb6xLoedpXSdseYXhp8pUO_EhXmtl4evk8ofA/viewform?usp=sf_link"> <UserAddOutlined style={{marginRight: '5px'}}/> Join </a></p>
 
 
 
@@ -59,8 +59,8 @@ const Navbar = () => {
 
                 </div>
                 <div style={{width: "30%", display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
-                    <a target="_blank" href="https://airtable.com/shrgzrUWtOtwXJ67J"><Typography.Link style={{margin: "0px 20px"}}>Contact Us</Typography.Link></a>
-                    <a target="_blank" href="https://airtable.com/shrviVLm2wdRwaXBI"><Button type="primary">Join Us</Button></a>
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScLvgEh2bUevdf9v4dFMZprl862m70YwtIqdM899bFhqm5IYg/viewform?usp=sf_link"><Typography.Link style={{margin: "0px 20px"}}>Contact Us</Typography.Link></a>
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc7ZrKa7cJ2hYb6xLoedpXSdseYXhp8pUO_EhXmtl4evk8ofA/viewform?usp=sf_link"><Button type="primary">Join Us</Button></a>
                 </div>
             </>
             }

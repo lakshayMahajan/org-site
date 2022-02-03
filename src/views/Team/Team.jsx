@@ -7,6 +7,7 @@ import {motion} from 'framer-motion'
 import TeamCard from './TeamCard'
 
 import ethan from '../../assets/people/ethan.png'
+import arya from "../../assets/people/Aryadeep_Buddha.png"
 import { LinkOutlined} from '@ant-design/icons';
 
 import MemberList from './MemberList'
@@ -119,7 +120,7 @@ const Team = () => {
                 >
                     
                     <MemberList title="Board" noLink={true}>
-                        <TeamCard info={{name: "Aryadeep Buddha", li:"https://www.linkedin.com/in/aryadeep-buddha-57b751211/", gh: "https://github.com/AryaBuddha", roles: ['Director', 'Project Lead','Fullstack'], img: "https://i.imgur.com/L8MupgD.png"}}/>
+                        <TeamCard info={{name: "Aryadeep Buddha", li:"https://www.linkedin.com/in/aryadeep-buddha-57b751211/", gh: "https://github.com/AryaBuddha", roles: ['Director', 'Project Lead','Fullstack'], img: {arya}}}/>
 
                         <TeamCard info={{name: "Chris Farber", img: "https://cdn.discordapp.com/attachments/627006557321691138/795345177346179132/1583975027966.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
                     </MemberList>

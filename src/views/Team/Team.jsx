@@ -7,7 +7,8 @@ import {motion} from 'framer-motion'
 import TeamCard from './TeamCard'
 
 import ethan from '../../assets/people/ethan.png'
-import arya from "../../assets/people/Aryadeep_Buddha.png"
+import arya from "../../assets/people/Aryadeep_Buddha.jpg"
+import lakshay from "../../assets/people/lakshay.jpeg"
 import { LinkOutlined} from '@ant-design/icons';
 
 import MemberList from './MemberList'
@@ -95,6 +96,7 @@ const Team = () => {
                 <Title level={1} style={{color: "#333", marginBottom: "10px"}}>Our Mission</Title>
                 <Text>To connect HSE students through a cohesive software ecosystem</Text>
             </motion.div>
+            
             <motion.div  
                 style={{marginTop: "10px", width: "100%", display: 'flex', background: "#fafdff", display: "flex", alignItems: "center", flexDirection: "column", position: "static" }}
             >
@@ -119,10 +121,10 @@ const Team = () => {
                 style={{width: '85%', maxWidth: genWidth(), zIndex: "3",  marginTop: smallerLayout ?  mobile ?' calc(100% * .3)': 'calc(100% * .19)' : 'calc(100% * .14)'}}
                 >
                     
-                    <MemberList title="Board" noLink={true}>
-                        <TeamCard info={{name: "Aryadeep Buddha", li:"https://www.linkedin.com/in/aryadeep-buddha-57b751211/", gh: "https://github.com/AryaBuddha", roles: ['Director', 'Project Lead','Fullstack'], img: {arya}}}/>
+                    <MemberList title="Founders" noLink={true}>
+                        <TeamCard info={{name: "Aryadeep Buddha", img: arya, li:"https://www.linkedin.com/in/aryadeep-buddha-57b751211/", gh: "https://github.com/AryaBuddha", roles: ['Founder', 'Project Lead','Fullstack']}}/>
 
-                        <TeamCard info={{name: "Chris Farber", img: "https://cdn.discordapp.com/attachments/627006557321691138/795345177346179132/1583975027966.png", li: "https://www.linkedin.com/in/preston-mccrary-62b90a178/", gh: "https://github.com/farbs03", roles: ['Backend', 'Mobile'], }}/>
+                        <TeamCard info={{name: "Lakshay Mahajan", img:lakshay, li: "https://www.linkedin.com/in/lakshay-mahajan-8b986a237/", gh: "https://github.com/lakshayMahajan", roles: ['Founder','Backend', 'Mobile'], }}/>
                     </MemberList>
 
                     <MemberList title="Members" noLink={true}>

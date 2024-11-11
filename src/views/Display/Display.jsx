@@ -18,8 +18,8 @@ const {Title, Text} = Typography
 const schedule = {
     photo : "https://cdn.discordapp.com/attachments/626507510085320725/773434378600316928/Screen_Shot_2020-11-04_at_1.31.58_AM.png",
     isMobile: true,
-    siteLink: "https://hseschedule.com",
-    githubLink: "https://github.com/HSE-Apps/schedule-client",
+    siteLink: "https://hseschedule.app/",
+    githubLink: "https://github.com/HSE-Apps-Team/schedule-client",
     desc: 'View the live schedule updated for any occassion.'
 
 }
@@ -28,7 +28,7 @@ const clubs = {
     photo: "https://cdn.discordapp.com/attachments/626507510085320725/773385564061696050/Screen_Shot_2020-11-03_at_10.18.00_PM.png",
     isMobile: false,
     siteLink: "https://hseclubs.com",
-    githubLink: "https://github.com/HSE-Apps/club-client",
+    githubLink: "https://github.com/HSE-Apps-Team/club-client",
     desc: 'Manage, browse, and join clubs in one central place.'
 
 
